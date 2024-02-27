@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    /*sm*/
+    @apply font-bold text-center text-[30px];
+    /*md*/
+    /*lg*/
+    @apply lg:text-[44px];
+    /*xl*/
+    /*2xl*/
+    @apply lg:text-[62px];
+  }
+
+  h2 {
+    /*sm*/
+    @apply font-semibold text-[24px] mb-[32px];
+    /*md*/
+    @apply md:text-[30px];
+    /*lg*/
+    @apply lg:text-[36px] lg:mb-[48px];
+    /*xl*/
+    @apply xl:text-[44px] xl:mb-[64px];
+    /*2xl*/
+    @apply 2xl:text-[52px] 2xl:mb-[79.2px];
+  }
+
+  h3 {
+    @apply text-base md:text-[20px] font-light mb-[16px] md:mb-[32px];
+  }
+  p {
+    /*sm*/
+    @apply text-base leading-[25px] mb-[14px];
+    /*md*/
+    @apply md:text-[18px] md:leading-[27px];
+    /*lg*/
+    @apply lg:text-[24px] lg:leading-[43.2px];
+    /*xl*/
+    /*2xl*/
+    @apply 2xl:text-[36px] 2xl:leading-[54px];
+  }
+  small {
+    /*sm*/
+    @apply text-[14px] mb-[8px] text-brandbluegrey;
+    /*md*/
+    @apply md:text-[18px];
+    /*lg*/
+    /*xl*/
+    /*2xl*/
+    @apply text-[20px];
+  }
+  li {
+    /*sm*/
+    @apply text-[14px] mb-[8px];
+    /*md*/
+    @apply md:text-base;
+    /*lg*/
+    /*xl*/
+    /*2xl*/
+    @apply text-[24px];
+  }
+}
+
+@layer components {
+  .btn {
+    @apply text-base text-brandbluegrey px-[16px] py-[12px] border-[3px] border-brandgreen rounded-2xl mt-[16px] hover:bg-brandbeige hover:border-brandbeige hover:text-brandblue duration-300;
+  }
+  .skills {
+    @apply flex justify-start gap-[24px] md:gap-[80px] items-end mb-[24px];
+  }
+  .category {
+    @apply md:mb-[24px];
+  }
+  .projects-img {
+    @apply rounded-2xl mb-[16px];
+  }
+  .test-name {
+    @apply text-brandblue font-semibold mb-0 pb-0 xl:text-[24px];
+  }
+  .test-title {
+    @apply italic text-brandgreen mb-[16px] xl:text-[24px];
+  }
+  .quote {
+    @apply bg-brandbluegrey text-black rounded-lg inline-block mb-[32px] text-base p-[12px];
+    @apply md:text-[18px] md:px-[18px] md:py-[16px] md:mb-[48px] lg:mb-[20px];
+  }
+  .overlay {
+    @apply w-[300px] h-[200px]  lg:w-[400px] lg:h-[266.6px]  2xl:w-[350px] 2xl:h-[233px] opacity-0 hover:opacity-95 hover:bg-brandblue duration-300 absolute inset-0 z-10 flex flex-col justify-center items-center;
+  }
+  .project-name {
+    @apply text-brandoffwhite mb-0;
+  }
+  .about-text {
+    /*sm*/
+    @apply text-[14px] leading-[25.5px]  font-light;
+    /*md*/
+    @apply md:text-[18px] md:leading-[32.4px];
+    /*lg*/
+    @apply lg:text-[20px] lg:leading-[36px];
+    /*xl*/
+    /*2xl*/
+    @apply 2xl:text-[24px] 2xl:leading-[48px];
+  }
+}
