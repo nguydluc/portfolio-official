@@ -4,7 +4,7 @@ import Logo from "../assets/logo.svg";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const ROUTES = [
-  { name: "Home", path: "/" },
+  { name: "Home", path: "https://nguydluc.github.io/portfolio-official/" },
   { name: "About", path: "#about" },
   { name: "Contact", path: "#contact" },
 ];
@@ -15,7 +15,10 @@ export default function Nav() {
   return (
     <nav className="xl:px-24 flex flex-wrap justify-between items-center bg-brandoffwhite">
       {/* This is our logo */}
-      <a href="/" className="cursor-pointer">
+      <a
+        href="https://nguydluc.github.io/portfolio-official/"
+        className="cursor-pointer"
+      >
         <img src={Logo} alt="Logo" className="h-20 w-20 m-4" />
       </a>
       {/* burger button */}

@@ -8,7 +8,10 @@ export default function Footer() {
 
   return (
     <footer className="bg-brandblue xl:px-24 flex flex-col gap-[12px] py-[8%] lg:flex-row lg:px-[3%] md:py-[4%] lg:py-[2%] justify-between items-center">
-      <a href="#" className="">
+      <a
+        href="https://nguydluc.github.io/portfolio-official/"
+        className="cursor-pointer"
+      >
         <img src={Logo} alt="Logo" className="h-12 w-auto" />
       </a>
       <small>&copy; {currentYear} Dylan Luc. All rights reserved.</small>
